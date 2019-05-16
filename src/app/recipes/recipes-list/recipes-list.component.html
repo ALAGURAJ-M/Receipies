@@ -1,0 +1,18 @@
+<div class="row">
+<div class="col-xs-12">
+<button class="btn btn-sucess"> new recipe</button>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12">
+<a href="#" class="list-group-item claearfix" *ngFor="let repie of recipes">
+<div class="pull-left">
+<h4 class="list-group-item-heading">{{repie.name}}</h4>
+<p class="list-group-item-text"> {{repie.description}} </p>
+</div>
+<span class="pull-right">
+<img [src]="repie.imagePath" alt="" class="img-responsive" style="max-height:50px;"/></span>
+</a>
+<app-recipes-item></app-recipes-item>
+</div>
+</div>
